@@ -1,3 +1,4 @@
+
 import express from 'express';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
@@ -16,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.post('/api/contact', (req, res) => {
   const { name, email, message } = req.body;
   // Here you would typically handle the form data (e.g., send an email, save to database)
-  console.log('Contact form submission:', { name, email, message });
+  // console.log('Contact form submission:', { name, email, message });
   res.json({ success: true, message: 'Message received!' });
 });
 
@@ -32,6 +33,6 @@ if (process.env.NODE_ENV === 'production') {
 // Only start the server if this file is run directly
 if (import.meta.url === `file://${__filename}`) {
   app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+    // console.log(`Server running on http://localhost:${port}`);
   });
 }
