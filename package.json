@@ -13,15 +13,16 @@
     "format": "prettier --write ."
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "ejs": "^3.1.9",
     "express": "^4.21.2",
+    "framer-motion": "^11.0.3",
+    "gsap": "^3.12.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.0",
-    "ejs": "^3.1.9",
-    "framer-motion": "^11.0.3",
     "react-intersection-observer": "^9.5.3",
-    "react-scroll-parallax": "^3.4.5",
-    "gsap": "^3.12.5"
+    "react-router-dom": "^6.22.0",
+    "react-scroll-parallax": "^3.4.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
