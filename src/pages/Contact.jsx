@@ -16,7 +16,6 @@ export default function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setStatus('');
-// console.log(serviceId,templateId,publicKey)
     try {
       const result = await emailjs.send(
        serviceId,
